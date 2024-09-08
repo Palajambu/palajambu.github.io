@@ -22,42 +22,47 @@ const Layout = () => {
   );
 };
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/aboutme",
+          element: <About />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
+          path: "/resume",
+          element: <Resume />,
+        },
+        {
+          path: "/posts/:id",
+          element: <Singlepage />,
+        },
+        {
+          path: "/categories",
+          element: <Category />,
+        },
+        {
+          path: "/search",
+          element: <Search />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/aboutme",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/resume",
-        element: <Resume />,
-      },
-      {
-        path: "/posts/:id",
-        element: <Singlepage />,
-      },
-      {
-        path: "/categories",
-        element: <Category />,
-      },
-      {
-        path: "/search",
-        element: <Search />,
-      },
-    ],
-  },
-]);
+    basename: import.meta.env.BASE_URL,
+  }
+);
 
 function App() {
   return (
