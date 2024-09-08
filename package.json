@@ -1,12 +1,12 @@
 {
-  "homepage": "https://Palajambu/github.io/palajambu.github.io",
+  "homepage": "https://palajambu.github.io",
   "name": "myblog",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -16,6 +16,7 @@
     "@types/react-syntax-highlighter": "^15.5.13",
     "axios": "^1.7.5",
     "fast-glob": "^3.3.2",
+    "gh-pages": "^6.1.1",
     "gray-matter": "^4.0.3",
     "micromatch": "^4.0.7",
     "react": "^18.3.1",
