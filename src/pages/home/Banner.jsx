@@ -14,7 +14,7 @@ function Banner() {
         className="absolute w-full h-full object-top object-cover"
       />
 
-      <Lottie
+      {/* <Lottie
         className="absolute object-left-top h-1/3"
         style={{ left: "7%" }}
         animationData={Hello}
@@ -22,7 +22,7 @@ function Banner() {
       <Lottie
         className="absolute object-left-top h-1/3"
         animationData={WavingBird}
-      ></Lottie>
+      ></Lottie> */}
       <div className="absolute flex flex-row justify-between right-20 top-16">
         <Link
           to={`https://www.credly.com/badges/05182339-5668-49b1-a64b-2aa076141826/public_url`}
