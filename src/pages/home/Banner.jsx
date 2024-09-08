@@ -1,9 +1,9 @@
 import BannerBg from "../../images/Banner.png";
 import TableauDA from "../../images/TableauDA.png";
 import AlteryxDesignerCore from "../../images/AlteryxDesignerCore.png";
-import Lottie from "lottie-react";
-import Hello from "../../images/Hello.json";
-import WavingBird from "../../images/WavingBird.json";
+// import Lottie from "lottie-react";
+// import Hello from "../../images/Hello.json";
+// import WavingBird from "../../images/WavingBird.json";
 import { Link } from "react-router-dom";
 
 function Banner() {
